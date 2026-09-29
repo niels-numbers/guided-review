@@ -1,6 +1,6 @@
 # guided-review
 
-A [Claude Code](https://claude.com/claude-code) skill that walks you through a code change like a guided tour: short summary first, then one small snippet at a time, explained in plain words. After each stop you answer with OK, ask for more detail, or request a change - Claude applies it, re-checks it and only moves on when you approve.
+A [Claude Code](https://claude.com/claude-code) skill that walks you through a code change like a guided tour: short summary first, then a triage into "needs your eyes" vs. "mechanical" files, then one small snippet at a time, explained in plain words. After each stop you answer with OK, ask for more detail, or request a change - Claude applies it, re-checks it and only moves on when you approve.
 
 At the end it proposes a commit message. It never commits on its own.
 

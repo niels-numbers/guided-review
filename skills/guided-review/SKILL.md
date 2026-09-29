@@ -22,9 +22,25 @@ problem or goal this change is solving, in terms someone outside the codebase
 would follow — one short paragraph, no jargon yet. Skip this only if the change
 is trivial enough that it would be redundant (e.g. a one-line typo fix).
 
-Then decide a sensible **reading order** — most important first (core/interface
-before callers before tests). Tell me the order and how many stops in one line,
-then start.
+## Triage: spend my attention where the risk is
+
+Before the tour, sort the changed files into two groups:
+- **Needs your eyes:** business logic, security/permissions, data changes
+  (migrations, deletes, money), public interfaces, anything surprising or
+  where you made an assumption I didn't explicitly ask for.
+- **Mechanical:** wiring, imports, renames, DTOs/boilerplate, config, generated
+  code, tests that just mirror the implementation.
+
+Show both lists with a one-line reason per file. Only the first group gets
+the full stop-by-stop tour. The mechanical group gets **one** summary stop at
+the end: one line per file, and I can pull any of them into a full tour.
+When unsure which group a file belongs in, put it in "needs your eyes".
+Skip triage for small changes (roughly 3 files or fewer) - just tour them.
+
+Then decide a sensible **reading order** for the "needs your eyes" group -
+most important first (tests that show the intended behavior, then
+core/interface, then callers). Tell me the order and how many stops in one
+line, then start.
 
 ## Sectioning: keep every stop small
 
