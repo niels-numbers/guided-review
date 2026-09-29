@@ -61,6 +61,10 @@ whole method if that method does more than one thing. Rules of thumb:
 
 For each stop, in order — **always in this order, every single stop**:
 
+0. **Name the file.** Right under the stop heading, give the file path with
+   line number as `path/to/file:line` (clickable), e.g.
+   `**Datei:** modules/Foo/Services/Bar.php:42`. Every stop, even when the
+   previous stop was in the same file — I should never have to ask "which file?".
 1. **Orient first, in plain words, before any "why".** One or two short
    sentences: what this piece of code concretely *is* or *does* when the app
    runs — not yet why it was written this way. E.g. "This is the page text
