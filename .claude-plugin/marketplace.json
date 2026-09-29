@@ -1,0 +1,16 @@
+{
+  "name": "guided-review",
+  "owner": {
+    "name": "Adam Nielsen"
+  },
+  "metadata": {
+    "description": "Guided, interactive code review skill for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "guided-review",
+      "source": "./",
+      "description": "Guided, interactive review of your current change in small, plain-language steps."
+    }
+  ]
+}

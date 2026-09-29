@@ -1,0 +1,8 @@
+{
+  "name": "guided-review",
+  "description": "Guided, interactive review of your current change in small, plain-language steps.",
+  "version": "1.0.0",
+  "author": { "name": "Adam Nielsen" },
+  "repository": "https://github.com/niels-numbers/guided-review",
+  "license": "MIT"
+}
